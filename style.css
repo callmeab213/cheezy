@@ -1,0 +1,177 @@
+*{
+  padding: 0; 
+  margin: 0;
+}
+.carousel {
+  margin-top: -4px; /* Adjust this value as needed */
+}
+
+/*Nav bar*/
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+  }
+
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    transition: background-color 0.2s ease;
+  }
+.navbar-nav{
+  margin-left: 35%;
+}
+.navbar-nav li{
+  margin-right: 5%;
+}
+.navbar-nav li a{
+  text-decoration: none;
+  /* color: #fff; */
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 700;
+}
+  .navbar-toggler-icon:before,
+  .navbar-toggler-icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    transition: top 0.2s ease, transform 0.2s ease;
+  }
+  .navbar-nav li a:hover{
+    color: #fff;
+  }
+  .navbar-toggler-icon:after {
+    top: 10px;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  /* SLIDER */
+  .carousel-inner{
+    padding-top: 4px;
+    height: 90vh;
+  } 
+@media screen and (max-width: 1240px) {
+  .carousel-inner{
+    height: 35vh;
+  }
+}
+  @media screen and (max-width: 768px) {
+    .carousel-inner{
+      height: 30vh;
+    }
+  }
+
+   .cards{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+   }
+   .cardi{
+    margin: 20px;
+    flex: 1 1 auto;
+   }
+
+   @media screen and (max-width: 768px) {
+      .cardi{
+        flex-basis: 100%;
+      }
+   }
+   @media screen and (max-width: 768px) {
+      .card-text{
+        font-size: smaller;
+          
+      }
+   }
+   /* FOOTER */
+   .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+.headings{
+  text-align: center;
+  margin-top: 5%;
+}
+.headings h3{
+  color: orange;
+}
+.headings h1{
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+}
+.card-img-top {
+  height: 200px; /* Adjust the height as needed */
+  width: auto;
+  object-fit: cover;
+  
+}
+.btn{
+  background-color: orange;
+
+}
+.btn-sm{
+  font-weight: 700;
+}
+.bb{
+  color: white;
+  font-weight: 700;
+}
+.bb:hover{
+  color: white;
+}
+.btn a:hover{
+  background-color: orange;
+}
+.fa-heart{
+  color: orange;
+  cursor: pointer;
+}
